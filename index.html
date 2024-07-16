@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Baby Shower Martina</title>
+</head>
+
+<body>
+  <img id="main-rainbow" src="./source/rainbow.svg" alt="Rainbow">
+  <h1 id="hola" class="carga">HOLA</h1>
+  <p id="miNombreEs" class="commonText carga">mi nombre es</p>
+  <h2 id="martina" class="carga">Martina</h2>
+  <p id="teInvito" class="carga">Y te invito a mi Baby Shower<br>
+    el Domingo 7 de mayo</p>
+  <button id="info-btn" class="btn carga">click para más info</button>
+
+  <div id="elModal" class="modal carga">
+    <div class="modal-contenido">
+      <span id="cerrar" class="cerrar">&times;</span>
+      <span class="volver-atras" id="volver-atras"><img src="./source/flecha.svg" alt="flecha" srcset=""></span>
+      <article class="modal-container">
+        <p class="masInfo">mas info</p>
+        <button id="donde-btn" class="btn">¿Dónde es?</button>
+        <article class="donde-es" id="donde-es">
+          <img id="map" src="./source/mapa.svg"></img>
+        </article>
+        <button id="hora-btn" class="btn">¿A qué hora?</button>
+        <article class="que-hora" id="que-hora">
+          <p class="hour-text">desde las</p>
+          <p class="hours">12:00</p>
+          <p class="hour-text">hasta las</p>
+          <p class="hours">15:00</p>
+        </article>
+        <button id="lista-btn" class="btn">Lista de <strong>no</strong> me regales</button>
+        <article class="no-regales" id="no-regales">
+          <p class="no-realaes-esto">Bañera - Huevito - Cochecito -
+            Cuna - Moises - Babitas - Ropa RN - Mantas -
+            Gimnasio - Medias - Portaenfants -
+            Luz de noche - Pañales RN -
+            Toallitas húmedas - Piso Encastrable - Mochila
+          </p>
+        </article>
+        <p class="commonText" id="confirm">Confirmale a mis papis si vas!</p>
+      </article>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

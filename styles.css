@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "Artifact";
+    src: url("fonts/Artifact.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DashingUnicorn";
+    src: url("fonts/DashingUnicorn.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RoundedElegance";
+    src: url("fonts/Rounded_Elegance.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./source/background.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0;
+    padding-bottom: 10%;
+    box-sizing: border-box;
+}
+
+#main-rainbow {
+    width: 80%;
+    height: auto;
+    animation: getIn 5s ease-in-out;
+}
+
+#hola {
+    font-family: DashingUnicorn;
+    font-size: 7rem;
+    color: #b8c0ff;
+    margin-top: -10px;
+}
+
+.commonText {
+    color: #b8c0ff;
+    font-family: RoundedElegance;
+    margin-top: -100px;
+    font-size: 25px;
+}
+
+#martina {
+    font-family: Artifact;
+    color: #efb1b4;
+    font-size: 85px;
+    margin-top: -30px;
+}
+
+#teInvito {
+    color: #b8c0ff;
+    font-family: RoundedElegance;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -60px;
+}
+
+.btn {
+    all: unset;
+    font-family: RoundedElegance;
+    width: 100%;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 2rem;
+}
+
+#info-btn,
+#hora-btn {
+    color: #efb1b4;
+    background-image: url("./source/bg-btn.svg");
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: #ffffff;
+    background-image: url("./source/background.svg");
+    background-repeat: repeat;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+.cerrar,
+.volver-atras {
+    color: #606060;
+    float: right;
+    font-size: 28px;
+    border: 1px solid #606060;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volver-atras {
+    float: left;
+    border: none;
+    display: none;
+}
+
+.cerrar:hover,
+.cerrar:focus,
+.volver-atras:hover,
+.volver-atras:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-container {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.masInfo {
+    margin: 0;
+    color: #b8c0ff;
+    font-family: dashingUnicorn;
+    font-size: 5rem;
+}
+
+#donde-btn {
+    color: #b8c0ff;
+    background-image: url("./source/btn-rose.svg");
+}
+
+#lista-btn {
+    color: #efb1b4;
+    background-image: url("./source/btn-green.svg");
+}
+
+strong {
+    font-weight: bolder !important;
+}
+
+#donde-es,
+#que-hora,
+#no-regales {
+    display: none;
+}
+
+#map {
+    margin-top: 20px;
+    width: 300px;
+}
+
+#que-hora {
+    text-align: center;
+    font-family: RoundedElegance;
+}
+
+.hour-text {
+    color: #efb1b4;
+}
+
+.hours {
+    color: #b8c0ff;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.no-realaes-esto {
+    text-align: center;
+    margin: 30px auto;
+    font-family: RoundedElegance;
+    width: 70%;
+    line-height: 2rem;
+}
+
+#confirm {
+    margin-top: 30px;
+    text-align: center;
+    width: 70%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
